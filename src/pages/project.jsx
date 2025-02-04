@@ -1,11 +1,7 @@
-import 'lightgallery.js/dist/css/lightgallery.css';
-import PT from 'prop-types';
-import {
-  LightgalleryItem,
-  LightgalleryProvider,
-  useLightgallery,
-} from 'react-lightgallery';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import Whatsapp from '../components/whatsapp';
@@ -14,36 +10,14 @@ import './project.scss';
 
 function Project() {
   const { type, id } = useParams();
+  const [index, setIndex] = useState(-1);
 
-  const PhotoItem = ({ image, thumb, group, className }) => (
-    <div className={className}>
-      <LightgalleryItem group={group} src={image} thumb={thumb}>
-        <img src={image} style={{ width: '100%' }} />
-      </LightgalleryItem>
-    </div>
+  var slides = Array.from(
+    { length: projectsJson[type].projects[id].photos },
+    (_, i) => ({
+      src: `${projectsJson[type].projects[id].url}${i + 1}.jpg`,
+    })
   );
-  PhotoItem.propTypes = {
-    image: PT.string.isRequired,
-    thumb: PT.string,
-    group: PT.string.isRequired,
-    className: PT.string,
-  };
-
-  const OpenButtonWithHook = ({ className, index, ...rest }) => {
-    const { openGallery } = useLightgallery();
-    return (
-      <button
-        {...rest}
-        onClick={() => openGallery('group2', index)}
-        className={['button is-primary', className || ''].join(' ')}
-      />
-    );
-  };
-
-  OpenButtonWithHook.propTypes = {
-    className: PT.string,
-    index: PT.number,
-  };
 
   return (
     <>
@@ -53,22 +27,21 @@ function Project() {
           <div className='container'>
             <h1>{projectsJson[type].projects[id].name}</h1>
             <p>{projectsJson[type].projects[id].desc}</p>
-            <LightgalleryProvider>
-              <div className='items'>
-                {Array.from(
-                  { length: projectsJson[type].projects[id].photos },
-                  (_, i) => (
-                    <PhotoItem
-                      key={i}
-                      image={`${projectsJson[type].projects[id].url}${
-                        i + 1
-                      }.jpg`}
-                      className={`item item-${i + 1}`}
-                    />
-                  )
-                )}
-              </div>
-            </LightgalleryProvider>
+
+            <div className='grid'>
+              {slides.map((slide, i) => (
+                <div key={i} className='item' onClick={() => setIndex(i)}>
+                  <img src={slide.src} alt={`project-${i}`} />
+                </div>
+              ))}
+            </div>
+
+            <Lightbox
+              index={index}
+              slides={slides}
+              open={index >= 0}
+              close={() => setIndex(-1)}
+            />
           </div>
         </section>
         <Whatsapp />
