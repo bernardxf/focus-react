@@ -1,0 +1,18 @@
+header {
+  background: url(/images/bg-header.jpg) 0 0 no-repeat;
+  height: 80px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+
+  @media (max-width: 640px) {
+    height: 60px;
+  }
+
+  .container {
+    @media (max-width: 640px) {
+      padding: 10px;
+    }
+  }
+}

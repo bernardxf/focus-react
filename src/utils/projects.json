@@ -1,0 +1,40 @@
+{
+  "1": {
+    "name": "Institucionais",
+    "projects": []
+  },
+  "2": {
+    "name": "Industriais",
+    "projects": []
+  },
+  "3": {
+    "name": "Residenciais",
+    "projects": []
+  },
+  "4": {
+    "name": "Comerciais",
+    "projects": [
+      {
+        "id": 0,
+        "name": "Barreiro",
+        "desc": "Power Center com mais de 17 mil metros de área construída ocupando um quarteirão da av. Sinfrônio Brochado no Barreiro conta com supermercado, academia, pet center, farmácia dentre outros.",
+        "url": "/images/projects/com/barreiro/",
+        "photos": 10
+      },
+      {
+        "id": 1,
+        "name": "Prédio RJ",
+        "desc": "Edificação comercial localizada a rua Rio de Janeiro em Belo horizonte. Seu terreno de 10x40m trouxe desafios para suas solução onde elevadores veiculares foram usados para os estacionamentos. Sua fachada envidraçada serve de moldura para paisagem urbana. Também conta com um terraço jardim, um refugio para os frequentadores.",
+        "url": "/images/projects/com/prediorj/",
+        "photos": 6
+      },
+      {
+        "id": 2,
+        "name": "Tribe",
+        "desc": "Descrição do projeto",
+        "url": "/images/projects/com/tribe/",
+        "photos": 6
+      }
+    ]
+  }
+}
