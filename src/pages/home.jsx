@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import ImgCover from '/images/bg.jpg';
 import ImgProj4 from '/images/projects/com/barreiro/1.jpg';
 import ImgProj2 from '/images/projects/ind/pesqueiro/1.png';
-import ImgProj1 from '/images/projects/ins/correrios/4.png';
+import ImgProj1 from '/images/projects/ins/correios/4.png';
 import ImgProj3 from '/images/projects/res/falcatas/1.png';
 
 function Home() {

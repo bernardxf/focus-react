@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './header.scss';
 import InstagramLogo from '/images/instagram.png';
 import LinkedinLogo from '/images/linkedin.png';
@@ -8,20 +9,24 @@ function Header() {
     <header>
       <div className='container'>
         <nav>
-          <a
-            href='#home'
+          <Link
+            to={{ pathname: '/', hash: '#home' }}
             aria-label='focus'
             title='focus'
             aria-labelledby='focus'
             className='logo'
           >
-            <img src={Logo} alt='logo focus' className='logo' />
+            <img
+              src={Logo}
+              alt='Focus Arquitetura e Engenharia company logo'
+              className='logo'
+            />
             <span>
               ARQUITETURA
               <br />
               ENGENHARIA
             </span>
-          </a>
+          </Link>
           <a
             href='#'
             id='icon-menu'
@@ -35,22 +40,32 @@ function Header() {
           </a>
           <ul id='nav-ul'>
             <li>
-              <a href='#home' data-i18n='home'>
+              <Link to={{ pathname: '/', hash: '#home' }} data-i18n='home'>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#about' data-i18n='about'>
+              <Link to={{ pathname: '/', hash: '#about' }} data-i18n='about'>
                 A Focus
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#projects' data-i18n='projects'>
+              <Link
+                to={{ pathname: '/', hash: '#projects' }}
+                data-i18n='projects'
+              >
                 Projetos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#contact' data-i18n='contact'>
+              <a
+                href='https://wa.me/3132670301?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Focus%20Arquitetura%20e%20Engenharia.'
+                data-i18n='contact'
+                title='Fale Conosco'
+                aria-label='Fale Conosco'
+                target='_blank'
+                rel='noopener'
+              >
                 Fale Conosco
               </a>
             </li>

@@ -19,7 +19,7 @@ function Footer() {
           </div>
           <div className='social'>
             <p>Telefone: (31) 3267-0301</p>
-            <p>Whatsapp: (31) 9999-9999</p>
+            <p>Whatsapp: (31) 3267-0301</p>
             <p>
               Instagram:
               <a
