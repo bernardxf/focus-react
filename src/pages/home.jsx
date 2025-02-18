@@ -5,10 +5,10 @@ import './home.scss';
 
 import { useNavigate } from 'react-router-dom';
 import ImgCover from '/images/bg.jpg';
-import ImgProj1 from '/images/projects/04.jpg';
-import ImgProj2 from '/images/projects/05.jpg';
-import ImgProj3 from '/images/projects/08.jpg';
-import ImgProj4 from '/images/projects/10.jpg';
+import ImgProj4 from '/images/projects/com/barreiro/1.jpg';
+import ImgProj2 from '/images/projects/ind/pesqueiro/1.png';
+import ImgProj1 from '/images/projects/ins/correrios/4.png';
+import ImgProj3 from '/images/projects/res/falcatas/1.png';
 
 function Home() {
   const navigate = useNavigate();
@@ -18,7 +18,10 @@ function Home() {
       <Header />
       <main>
         <section id='home'>
-          <img src={ImgCover} alt='cover' />
+          <img
+            src={ImgCover}
+            alt='Focus Architecture company building exterior'
+          />
         </section>
         <section id='about'>
           <div className='container'>
@@ -42,19 +45,31 @@ function Home() {
             <h2 data-i18n='projects'>Projetos</h2>
             <div className='project-grid'>
               <div className='project' onClick={() => navigate('/projects/1')}>
-                <img src={ImgProj1} alt='project-1' />
+                <img
+                  src={ImgProj1}
+                  alt='Institutional architecture project showcase'
+                />
                 <h3>Institucional</h3>
               </div>
               <div className='project' onClick={() => navigate('/projects/2')}>
-                <img src={ImgProj2} alt='project-2' />
+                <img
+                  src={ImgProj2}
+                  alt='Industrial architecture project showcase'
+                />
                 <h3>Industrial</h3>
               </div>
               <div className='project' onClick={() => navigate('/projects/3')}>
-                <img src={ImgProj3} alt='project-3' />
+                <img
+                  src={ImgProj3}
+                  alt='Residential architecture project showcase'
+                />
                 <h3>Residencial</h3>
               </div>
               <div className='project' onClick={() => navigate('/projects/4')}>
-                <img src={ImgProj4} alt='project-4' />
+                <img
+                  src={ImgProj4}
+                  alt='Commercial architecture project showcase'
+                />
                 <h3>Comercial</h3>
               </div>
             </div>

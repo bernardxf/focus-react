@@ -29,8 +29,8 @@ function Projects() {
                       }
                     >
                       <img
-                        src={`${projectsJson[type].projects[i].url}1.jpg`}
-                        alt='teste'
+                        src={`${projectsJson[type].projects[i].url}1${projectsJson[type].projects[i].extension}`}
+                        alt={projectsJson[type].projects[i].name}
                       />
                       <h2>{projectsJson[type].projects[i].name}</h2>
                     </button>

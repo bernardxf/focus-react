@@ -15,7 +15,9 @@ function Project() {
   var slides = Array.from(
     { length: projectsJson[type].projects[id].photos },
     (_, i) => ({
-      src: `${projectsJson[type].projects[id].url}${i + 1}.jpg`,
+      src: `${projectsJson[type].projects[id].url}${i + 1}${
+        projectsJson[type].projects[id].extension
+      }`,
     })
   );
 
@@ -31,7 +33,12 @@ function Project() {
             <div className='grid'>
               {slides.map((slide, i) => (
                 <div key={i} className='item' onClick={() => setIndex(i)}>
-                  <img src={slide.src} alt={`project-${i}`} />
+                  <img
+                    src={slide.src}
+                    alt={`${projectsJson[type].projects[id].name} - Photo ${
+                      i + 1
+                    }`}
+                  />
                 </div>
               ))}
             </div>

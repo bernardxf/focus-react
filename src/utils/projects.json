@@ -1,15 +1,58 @@
 {
   "1": {
     "name": "Institucionais",
-    "projects": []
+    "projects": [
+      {
+        "id": 0,
+        "name": "Correios",
+        "desc": "Projeto em plataforma BIM (Building Information Model). Trata-se de um Terminal de Cartas e Encomendas do Correios com 56.000,00 m² de construção. Sendo 42.000,00 m² de galpão climatizado com 108 docas e 14.000,00 m² de setores administrativos e facilites. Um dos maiores desafios da obra foi conciliar o andamento das obras e detonação de um maciço rochoso e contenções em terra armada.",
+        "url": "/images/projects/ins/correios/",
+        "extension": ".png",
+        "photos": 5
+      }
+    ]
   },
   "2": {
     "name": "Industriais",
-    "projects": []
+    "projects": [
+      {
+        "id": 0,
+        "name": "CMD",
+        "desc": "O projeto da Central de Materiais Descartado (CMD) faz parte do Projeto Ferro Carajás S11D, que prevê a expansão e modernização do maior empreendimento de extração de minério de ferro do mundo, em operação desde 1985.",
+        "url": "/images/projects/ind/cmd/",
+        "extension": ".png",
+        "photos": 6
+      },
+      {
+        "id": 1,
+        "name": "Terminal Brisamar",
+        "desc": "Projeto desenvolvido em BIM. Terminal ferroviário direcionado às equipes administrativas e operacionais que atendem um determinado trecho da malha ferroviária de concessão da empresa cliente.",
+        "url": "/images/projects/ind/brisamar/",
+        "extension": ".png",
+        "photos": 12
+      },
+      {
+        "id": 1,
+        "name": "Terminal Pesqueiro",
+        "desc": "Projeto de autoria do arquiteto Paulista Ciro Pirondi desenvolvido pela Focus em plataforma BIM (Building Information Model). Edificação do Terminal Pesqueiro localizado na cidade de Itaipava-ES, especializado para recepção, lavagem, seleção, inspeção sanitária e comercialização do pescado, apoio aos pescadores em mar e em terra e logística para distribuição da produção, o conjunto é composto das demais estruturas de píer de acostagem das embarcações, píer de apoio, área técnica, Escola Náutica - Fábrica de barcos e Portaria. Nosso desafio foi adequar esta edificação premiada a racionalização construtiva e viabilidade de operação com nivel de marés e disposição do pier além da viabilidade de içamento de embarcações no estaleiro.",
+        "url": "/images/projects/ind/pesqueiro/",
+        "extension": ".png",
+        "photos": 4
+      }
+    ]
   },
   "3": {
     "name": "Residenciais",
-    "projects": []
+    "projects": [
+      {
+        "id": 0,
+        "name": "Falcatas",
+        "desc": "A residência Falcatas busca em seu partido arquitetônico aspectos estéticos referenciados na arquitetura realizada na região da Pampulha em seu período moderno. Estes aspectos estão associados a tecnologias e linguagens atuais a fim de viabilizar melhores condições de ambientação interna além de deixar evidente a contemporaneidade da obra. O objetivo foi intervir na paisagem urbana de forma harmônica uma vez que temos no entorno referências modernistas consagradas.",
+        "url": "/images/projects/res/falcatas/",
+        "extension": ".png",
+        "photos": 4
+      }
+    ]
   },
   "4": {
     "name": "Comerciais",
@@ -19,21 +62,24 @@
         "name": "Barreiro",
         "desc": "Power Center com mais de 17 mil metros de área construída ocupando um quarteirão da av. Sinfrônio Brochado no Barreiro conta com supermercado, academia, pet center, farmácia dentre outros.",
         "url": "/images/projects/com/barreiro/",
-        "photos": 10
+        "photos": 10,
+        "extension": ".jpg"
       },
       {
         "id": 1,
         "name": "Prédio RJ",
         "desc": "Edificação comercial localizada a rua Rio de Janeiro em Belo horizonte. Seu terreno de 10x40m trouxe desafios para suas solução onde elevadores veiculares foram usados para os estacionamentos. Sua fachada envidraçada serve de moldura para paisagem urbana. Também conta com um terraço jardim, um refugio para os frequentadores.",
         "url": "/images/projects/com/prediorj/",
-        "photos": 6
+        "photos": 6,
+        "extension": ".jpg"
       },
       {
         "id": 2,
         "name": "Tribe",
-        "desc": "Descrição do projeto",
+        "desc": "É com grande entusiasmo que apresentamos a vocês o Tribe, o primeiro hotel da marca na América Latina. Ele contará com 69 quartos e suítes, restaurante lounge bar, rooftop panorâmico, salas de reuniões, fitness center e áreas de lazer, tudo com design de interiores assinado por Beth Nejm. Este é um projeto de retrofit de um edifício icônico da década de 70, localizado na charmosa Praça da Liberdade, em Belo Horizonte. Originalmente pertencente ao governo de Minas Gerais, este edifício será transformado para abrigar o hotel Tribe, uma marca da Ennismore em parceria com a Accor de Lifestyle. Nosso desafio foi resignificar a edificação existente, trazendo um toque de contemporaneidade e celebrando o patrimônio Art Deco de Belo Horizonte. Fique ligado para acompanhar mais detalhes sobre este projeto que promete ser um marco na região!",
         "url": "/images/projects/com/tribe/",
-        "photos": 6
+        "photos": 6,
+        "extension": ".jpg"
       }
     ]
   }
